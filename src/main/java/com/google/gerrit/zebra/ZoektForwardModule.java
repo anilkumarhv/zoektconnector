@@ -6,7 +6,8 @@ import com.google.inject.servlet.ServletModule;
 public class ZoektForwardModule extends HttpPluginModule {
     @Override
     protected void configureServlets() {
-        super.configureServlets();
-        serve("/hello").with(ZoektForwardServlet.class);
+//        super.configureServlets();
+//        serve("/hello").with(ZoektForwardServlet.class);
+        bind(ZoektForwardServlet.class);
     }
 }
